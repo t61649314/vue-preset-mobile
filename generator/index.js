@@ -2,7 +2,7 @@ module.exports = (api, options) => {
   // 修改 `package.json` 里的字段
   api.extendPackage({
     dependencies: {
-      "vant": "^3.4.7",
+      "vant": "^2.12.47",
     },
     devDependencies: {
       "babel-plugin-import": "^1.13.5",
