@@ -1,10 +1,10 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link>
-    |
-    <router-link to="/demo">Demo</router-link>
-  </nav>
   <div class="demo">
+    <nav>
+      <router-link to="/">Home</router-link>
+      |
+      <router-link to="/demo">Demo</router-link>
+    </nav>
     <ul>
       <% if (bestPractices.includes('1')) { %>
       <li>
