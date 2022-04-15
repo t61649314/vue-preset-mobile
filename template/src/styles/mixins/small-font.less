@@ -1,0 +1,8 @@
+//IOS虽然原生支持12px以下的字体，但是安卓机的情况可以说是千奇百怪，所以统一使用缩放的方式来处理兼容性会更好，但是会变成inline-block请注意。
+
+.small-font(@font-size) {
+  font-size: 24px; //先设置我们约定了最小字号
+  display: inline-block; //改成block才可以缩放，注意对父元素和兄弟元素产生的影响，具体情况具体分析
+  transform: scale(@font-size./24); //设置想要的字号和我们最小字号的比例进行缩放
+  transform-origin: left center; //缩放后x轴靠左，y轴居中，其他情况就自行修改
+}
